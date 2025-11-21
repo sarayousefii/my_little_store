@@ -26,10 +26,10 @@ const router = createBrowserRouter([
       path:"/cart",
       element:<MainLayout><CartTable /></MainLayout>
     }
-  ]/*,
+  ],
   {
     basename: "/my_little_store"
-  }*/
+  }
 );
 
 createRoot(document.getElementById('root')).render(
