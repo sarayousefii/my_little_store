@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const baseUrl = import.meta.env.MODE === "development"
-  ? "http://localhost:9000/products"
+  ? "http://localhost:10000/products"
   : "https://my-little-store-api.onrender.com/products";
 
 export const fetchProducts = createAsyncThunk(
@@ -18,7 +18,7 @@ export const fetchProducts = createAsyncThunk(
       return response.data || [];
     } catch (err) {
       console.error("Failed to fetch products:", err);
-      return []; // همیشه آرایه برمی‌گردانیم
+      return []; 
     }
   }
 );
