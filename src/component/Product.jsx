@@ -29,7 +29,7 @@ const Product = ({ product }) => {
       >
         <div className="relative w-full overflow-hidden rounded-t-2xl aspect-[4/3]">
           <img
-            src={`http://localhost:9000/images/${product.image}`}
+            src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${product.image}` : "https://my-little-store-api.onrender.com" }
             alt={product.title}
             className="w-full h-full object-contain object-center transition-transform duration-500"
           />

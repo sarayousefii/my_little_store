@@ -33,7 +33,7 @@ const ProductModal = ({ product, onClose }) => {
 
         <div className="w-full overflow-hidden aspect-[4/3]">
           <img
-            src={`http://localhost:9000/images/${product.image}`}
+            src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${product.image}` : "https://my-little-store-api.onrender.com" }
             alt={product.title}
             className="w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105"
           />
