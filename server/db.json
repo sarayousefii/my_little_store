@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": "01",
+      "title": "رژ لب مات قرمز",
+      "price": 3000,
+      "description": "رژ لب با ماندگاری بالا و رنگ جذاب قرمز.",
+      "image": "lipstick01.jpg"
+    },
+    {
+      "id": "02",
+      "title": "پالت سایه چشم نود",
+      "price": 3000,
+      "description": "شامل ۱۲ رنگ متنوع برای آرایش روزانه و مهمانی.",
+      "image": "eyeshadow01.jpg"
+    },
+    {
+      "id": "03",
+      "title": "پرایمر صورت",
+      "price": 3000,
+      "description": "پوستی صاف و آماده برای آرایش با ماندگاری طولانی.",
+      "image": "primer01.jpg"
+    },
+    {
+      "id": "04",
+      "title": "ریمل حجم‌دهنده مشکی",
+      "price": 3000,
+      "description": "مژه‌هایی پر و مشکی بدون ایجاد چسبندگی.",
+      "image": "mascara01.jpg"
+    },
+    {
+      "id": "05",
+      "title": "خط چشم ژله‌ای مشکی",
+      "price": 3000,
+      "description": "کشیدن خط چشم دقیق و ماندگار.",
+      "image": "eyeliner01.jpg"
+    },
+    {
+      "id": "06",
+      "title": "هایلایتر براق طلایی",
+      "price": 3000,
+      "description": "برای جلوه‌دهی به استخوان گونه و نقاط برجسته صورت.",
+      "image": "highlighter01.jpg"
+    },
+    {
+      "id": "07",
+      "title": "کرم پودر طبیعی",
+      "price": 3000,
+      "description": "پوشش سبک و طبیعی برای پوست شما.",
+      "image": "foundation01.jpg"
+    },
+    {
+      "id": "08",
+      "title": "پنکیک مات",
+      "price": 3000,
+      "description": "کنترل چربی و تثبیت آرایش به مدت طولانی.",
+      "image": "powder01.jpg"
+    },
+    {
+      "id": "09",
+      "title": "رژ گونه هلویی",
+      "price": 3000,
+      "description": "رنگ طبیعی و شاداب برای گونه‌ها.",
+      "image": "blush01.jpg"
+    },
+    {
+      "id": "10",
+      "title": "لاک ناخن قرمز کلاسیک",
+      "price": 3000,
+      "description": "رنگی جذاب و ماندگار برای ناخن‌ها.",
+      "image": "nailpolish01.jpg"
+    },
+    {
+      "id": "11",
+      "title": "براش ست کامل آرایش",
+      "price": 3000,
+      "description": "شامل براش‌های مخصوص رژ، سایه و کرم پودر.",
+      "image": "brushset01.jpg"
+    },
+    {
+      "id": "12",
+      "title": "بالم لب مرطوب‌کننده",
+      "price": 3000,
+      "description": "حفظ نرمی و رطوبت لب‌ها در طول روز.",
+      "image": "lipbalm01.jpg"
+    },
+    {
+      "id": "13",
+      "title": "ریمل بلند کننده مژه",
+      "price": 3000,
+      "description": "مژه‌هایی بلند و زیبا بدون چسبندگی.",
+      "image": "mascara02.jpg"
+    },
+    {
+      "id": "14",
+      "title": "پالت سایه چشم رنگارنگ",
+      "price": 3000,
+      "description": "۱۲ رنگ جذاب برای آرایش روزانه و مهمانی.",
+      "image": "eyeshadow02.jpg"
+    },
+    {
+      "id": "15",
+      "title": "کرم پودر مات کننده",
+      "price": 3000,
+      "description": "پوست صاف و مات با پوشش کامل.",
+      "image": "foundation02.jpg"
+    },
+    {
+      "id": "16",
+      "title": "هایلایتر نقره‌ای",
+      "price": 3000,
+      "description": "درخشش طبیعی روی استخوان گونه و بینی.",
+      "image": "highlighter02.jpg"
+    },
+    {
+      "id": "17",
+      "title": "خط چشم ماژیکی مشکی",
+      "price": 3000,
+      "description": "آرایش سریع و ماندگار برای چشم‌ها.",
+      "image": "eyeliner02.jpg"
+    },
+    {
+      "id": "18",
+      "title": "پنکیک سبک",
+      "price": 3000,
+      "description": "تثبیت آرایش بدون احساس سنگینی روی پوست.",
+      "image": "powder02.jpg"
+    },
+    {
+      "id": "19",
+      "title": "رژ لب صورتی روشن",
+      "price": 3000,
+      "description": "رنگ شاداب و ماندگار برای لب‌ها.",
+      "image": "lipstick02.jpg"
+    },
+    {
+      "id": "20",
+      "title": "لاک ناخن صورتی شفاف",
+      "price": 3000,
+      "description": "ناخن‌هایی زیبا و طبیعی با درخشندگی ملایم.",
+      "image": "nailpolish02.jpg"
+    },
+    {
+      "id": "21",
+      "title": "براش سایه چشم کوچک",
+      "price": 3000,
+      "description": "برای سایه‌ زدن دقیق و حرفه‌ای چشم.",
+      "image": "brushset02.jpg"
+    },
+    {
+      "id": "22",
+      "title": "بالم لب رنگی",
+      "price": 3000,
+      "description": "رنگ ملایم و مرطوب‌کننده برای لب‌ها.",
+      "image": "lipbalm02.jpg"
+    },
+    {
+      "id": "23",
+      "title": "ریمل مشکی حجم‌دهنده",
+      "price": 3000,
+      "description": "مژه‌های پر و خوش‌حالت با ماندگاری بالا.",
+      "image": "mascara03.jpg"
+    },
+    {
+      "id": "24",
+      "title": "پالت سایه چشم شاین",
+      "price": 3000,
+      "description": "رنگ‌های براق و جذاب برای آرایش شبانه.",
+      "image": "eyeshadow03.jpg"
+    },
+    {
+      "id": "25",
+      "title": "کرم پودر سبک طبیعی",
+      "price": 3000,
+      "description": "پوشش طبیعی و سبک برای استفاده روزانه.",
+      "image": "foundation03.jpg"
+    },
+    {
+      "id": "26",
+      "title": "هایلایتر هلویی",
+      "price": 3000,
+      "description": "درخشش ملایم و طبیعی روی گونه‌ها.",
+      "image": "highlighter03.jpg"
+    },
+    {
+      "id": "27",
+      "title": "خط چشم ژل ضد آب",
+      "price": 3000,
+      "description": "ماندگاری طولانی و کشیدن آسان خط چشم.",
+      "image": "eyeliner03.jpg"
+    },
+    {
+      "id": "28",
+      "title": "پنکیک روشن",
+      "price": 3000,
+      "description": "کنترل چربی و تثبیت آرایش در طول روز.",
+      "image": "powder03.jpg"
+    },
+    {
+      "id": "29",
+      "title": "رژ لب نارنجی شاداب",
+      "price": 3000,
+      "description": "رنگ جذاب و ماندگار برای لب‌ها.",
+      "image": "lipstick03.jpg"
+    },
+    {
+      "id": "30",
+      "title": "لاک ناخن بنفش مات",
+      "price": 3000,
+      "description": "رنگ مات و شیک برای ناخن‌ها.",
+      "image": "nailpolish03.jpg"
+    }
+  ]
+}
