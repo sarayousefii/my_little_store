@@ -8,7 +8,7 @@ const initialState = {
 
 const baseUrl = import.meta.env.MODE === "development"
   ? "http://localhost:10000/products"
-  : "https://my-little-store-api.onrender.com/products";
+  : "https://my-little-store-api-1.onrender.com";
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",

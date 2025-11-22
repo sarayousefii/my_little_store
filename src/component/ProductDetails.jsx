@@ -21,7 +21,7 @@ const ProductDetails = () => {
 
         <div className="w-full rounded-2xl overflow-hidden shadow-sm aspect-[4/3]">
           <img
-            src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${image}` : "https://my-little-store-api.onrender.com" }
+            src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${image}` : "https://my-little-store-api-1.onrender.com" }
             alt={title}
             className="w-full h-full object-contain object-center rounded-2xl transition-transform duration-500 hover:scale-105"
           />

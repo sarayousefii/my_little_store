@@ -46,7 +46,7 @@ const CartTable = () => {
                     <td className="p-4">
                       <Link to={`/products/${item.id}`} className="relative block w-20 h-20 rounded-lg overflow-hidden">
                         <img
-                          src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${item.image}` : "https://my-little-store-api.onrender.com" }
+                          src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${item.image}` : "https://my-little-store-api-1.onrender.com" }
                           alt={item.title}
                           className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
                         />
