@@ -13,13 +13,13 @@ const Product = ({ product }) => {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const handleAddToCart = () => {
-    dispatch(addToCart({ ...product, cartQty: 1 }));
-  };
+  const handleAddToCart = () => dispatch(addToCart({ ...product, cartQty: 1 }));
+  const handleDecrease = () => dispatch(decreaseCart(product));
 
-  const handleDecrease = () => {
-    dispatch(decreaseCart(product));
-  };
+  const imageUrl =
+    import.meta.env.MODE === "development"
+      ? `http://localhost:10000/images/${product.image}`
+      : `https://my-little-store-api-1.onrender.com/images/${product.image}`;
 
   return (
     <>
@@ -29,7 +29,7 @@ const Product = ({ product }) => {
       >
         <div className="relative w-full overflow-hidden rounded-t-2xl aspect-[4/3]">
           <img
-            src={import.meta.env.MODE === "development" ? `http://localhost:10000/images/${product.image}` : "https://my-little-store-api-1.onrender.com" }
+            src={imageUrl}
             alt={product.title}
             className="w-full h-full object-contain object-center transition-transform duration-500"
           />

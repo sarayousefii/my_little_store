@@ -7,20 +7,20 @@ const ProductDetails = () => {
   const { productID } = useParams();
   const { data: product, isError, isLoading } = useGetProductQuery(productID);
 
- 
   if (isError) return <p className="text-center mt-12 text-red-500">مشکلی پیش آمده...</p>;
   if (isLoading || !product) return <p className="text-center mt-12 text-gray-400">در حال بارگذاری...</p>;
-  if (!product.id) return <p className="text-center mt-12 text-gray-400">محصولی یافت نشد...</p>;
+
+  const { title, price, description, image } = product;
 
   const imageUrl =
     import.meta.env.MODE === "development"
-      ? `http://localhost:10000/images/${product.image}`
-      : `https://my-little-store-api-1.onrender.com/images/${product.image}`;
+      ? `http://localhost:10000/images/${image}`
+      : `https://my-little-store-api-1.onrender.com/images/${image}`;
 
   return (
     <div className="bg-gray-100 min-h-screen px-4 py-12 flex justify-center">
       <Helmet>
-        <title>{`قیمت و خرید ${product.title}`}</title>
+        <title>{`قیمت و خرید ${title}`}</title>
       </Helmet>
 
       <div className="bg-white rounded-3xl w-full max-w-5xl shadow-lg p-8 flex flex-col gap-8">
@@ -28,22 +28,19 @@ const ProductDetails = () => {
         <div className="w-full rounded-2xl overflow-hidden shadow-sm aspect-[4/3]">
           <img
             src={imageUrl}
-            alt={product.title}
+            alt={title}
             className="w-full h-full object-contain object-center rounded-2xl transition-transform duration-500 hover:scale-105"
           />
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-4xl font-extrabold text-gray-800">{product.title}</h2>
-          <p className="text-gray-600 text-lg leading-relaxed">{product.description}</p>
-          <p className="text-orange-500 font-bold text-2xl">
-            قیمت: {product.price.toLocaleString()} تومان
-          </p>
+          <h2 className="text-4xl font-extrabold text-gray-800">{title}</h2>
+          <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
+          <p className="text-orange-500 font-bold text-2xl">قیمت: {price.toLocaleString()} تومان</p>
         </div>
 
         <div className="w-full flex flex-col gap-4">
           <ProductForm product={product} />
-
           <Link
             to="/"
             className="w-full text-center py-3 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors font-semibold"
