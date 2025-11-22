@@ -4,6 +4,7 @@ import PaginateItems from "./component/PaginateItems";
 
 const App=()=> {
   const { data: products=[], isSuccess, isLoading, isError } = useGetAllProductsQuery();
+  alert(products)
   return (
     <div className="flex flex-col ">
       <MainLayout>
