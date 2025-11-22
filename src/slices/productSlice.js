@@ -6,15 +6,13 @@ const initialState = {
   status: null,
 };
 
-const baseUrl = import.meta.env.MODE === "development"
-  ? "http://localhost:10000/products"
-  : "https://my-little-store-api-1.onrender.com";
-
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
     try {
-      const response = await axios.get(baseUrl);
+      const response = await axios.get({ baseUrl: import.meta.env.MODE === "development"
+  ? "http://localhost:10000"
+  : "https://my-little-store-api-1.onrender.com" });
       return response.data || [];
     } catch (err) {
       console.error("Failed to fetch products:", err);
