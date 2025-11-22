@@ -1,12 +1,11 @@
 import Product from "./Product";
+import Spinner from "./Spinner";
 
 const ProductsList = ({ products, isSuccess, isLoading, isError }) => {
   return (
     <div className="py-5">
       <div className="container mx-auto px-4">
-        {isLoading && (
-          <p className="text-center text-white text-lg py-16">در حال بارگذاری...</p>
-        )}
+        {isLoading && <Spinner />}
 
         {isError && (
           <p className="text-center text-red-500 text-lg py-16">مشکلی پیش آمده...</p>
