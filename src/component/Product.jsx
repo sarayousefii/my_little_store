@@ -27,7 +27,7 @@ const Product = ({ product }) => {
         className="relative bg-white border border-gray-200 rounded-2xl shadow-md cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105"
         onClick={openModal}
       >
-        <div className="relative w-full overflow-hidden rounded-t-2xl aspect-[4/3]">
+        <div className="relative w-full overflow-hidden rounded-t-2xl aspect-[4/3] border-b border-[#61616129]">
           <img
             src={imageUrl}
             alt={product.title}
@@ -38,7 +38,7 @@ const Product = ({ product }) => {
           </div>
         </div>
 
-        <div className="flex justify-center -mt-3 mb-2 gap-2 relative z-10">
+        <div className="flex justify-center -mt-4 mb-2 gap-2 relative z-10">
           {productExist && (
             <button
               onClick={(e) => { e.stopPropagation(); handleDecrease(); }}

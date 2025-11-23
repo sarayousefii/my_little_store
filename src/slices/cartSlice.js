@@ -35,10 +35,10 @@ const cartSlice = createSlice({
 
       if (productExist) {
         state.entities[action.payload.id].cartQty += 1;
-        toast.info("تعداد افزایش یافت", { position: "bottom-right" });
+        toast.info("تعداد افزایش یافت", { position: "bottom-left" });
       } else {
         cartAdapter.addOne(state, { ...action.payload, cartQty: 1 });
-        toast.success("محصول به سبد خرید اضافه شد", { position: "bottom-right" });
+        toast.success("محصول به سبد خرید اضافه شد", { position: "bottom-left" });
       }
 
       localStorage.setItem("cartItems", JSON.stringify(state.entities));

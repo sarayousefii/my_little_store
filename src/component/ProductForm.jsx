@@ -12,7 +12,7 @@ const ProductForm = ({ product }) => {
   const handleDecrease = () => dispatch(decreaseCart(product));
 
   return (
-    <div className="w-full flex flex-col sm:flex-row items-center gap-2">
+    <div className="w-full flex flex-row items-center gap-2">
       {productExist ? (
         <>
           <button
