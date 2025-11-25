@@ -61,6 +61,11 @@ npm run build
 
 The project can be easily deployed to services like Vercel, Netlify, or any static hosting. The GitHub Actions CI workflow ensures the project builds correctly on every push to `main`.
 
+## Live Demo
+
+🎯 **Check out the live version:** [My Little Store Live Demo](https://sarayousefii.github.io/my_little_store)
+Experience a fully responsive online store with product browsing, cart functionality, and clean UI design.
+
 ## Screenshots
 
 *Add screenshots or GIFs of your project here to showcase the UI.*
